@@ -21,6 +21,22 @@ A Model-View-Controller (MVC) Todo application developed for **SIT727 Cloud Auto
 - Kubernetes orchestration
 - Cloud-native deployment patterns
 
+📂 Project Structure
+sit727-todo-app/
+├── kubernetes/               # K8s manifests
+│   ├── deployment.yaml       # Pod config
+│   └── service.yaml          # LB service
+├── src/
+│   ├── main/java/com/example/todo/
+│   │   ├── Todo.java         # Entity
+│   │   ├── TodoController.java
+│   │   └── TodoRepository.java
+│   └── resources/
+│       ├── templates/        # Thymeleaf
+│       └── application.properties
+├── Dockerfile                # Multi-stage
+└── pom.xml                   # Maven config
+
 ## 🚀 Key Features
 - **Full CRUD Functionality**: Create, Read, Update, Delete tasks
 - **H2 Database**: In-memory storage with automatic schema generation
@@ -56,3 +72,36 @@ cd sit727-todo-app
 
 # Run application
 mvn spring-boot:run
+```
+🐳 Docker Deployment
+```bash
+# Build image
+docker build -t todo-app .
+
+# Run container
+docker run -p 8080:8080 todo-app
+```
+☸️ Kubernetes Deployment
+```bash
+# Start Minikube
+minikube start
+
+# Set Docker env
+minikube docker-env
+eval $(minikube docker-env)  # Linux/Mac
+
+# Deploy
+kubectl apply -f kubernetes/deployment.yaml
+kubectl apply -f kubernetes/service.yaml
+
+# Get URL
+minikube service todo-service --url
+```
+📜 Log Inspection
+```bash
+# Docker logs
+docker logs <container-id>
+
+# K8s logs
+kubectl logs <pod-name> -f  # Follow logs
+```
