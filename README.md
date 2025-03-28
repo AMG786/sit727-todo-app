@@ -14,6 +14,9 @@
 - [Academic Context](#-academic-context)
 - [License](#-license)
 
+![Screenshot 2025-03-29 083337](https://github.com/user-attachments/assets/fef1765b-39b8-4cb1-9af8-16e4874b46b4)
+
+
 ## 🌟 Project Overview
 A Model-View-Controller (MVC) Todo application developed for **SIT727 Cloud Automation Technologies** demonstrating:
 - Spring Boot backend with Thymeleaf frontend
@@ -22,20 +25,8 @@ A Model-View-Controller (MVC) Todo application developed for **SIT727 Cloud Auto
 - Cloud-native deployment patterns
 
 📂 Project Structure
-sit727-todo-app/
-├── kubernetes/               # K8s manifests
-│   ├── deployment.yaml       # Pod config
-│   └── service.yaml          # LB service
-├── src/
-│   ├── main/java/com/example/todo/
-│   │   ├── Todo.java         # Entity
-│   │   ├── TodoController.java
-│   │   └── TodoRepository.java
-│   └── resources/
-│       ├── templates/        # Thymeleaf
-│       └── application.properties
-├── Dockerfile                # Multi-stage
-└── pom.xml                   # Maven config
+![image](https://github.com/user-attachments/assets/63a06cd2-4293-4fea-9970-010be118af50)
+
 
 ## 🚀 Key Features
 - **Full CRUD Functionality**: Create, Read, Update, Delete tasks
