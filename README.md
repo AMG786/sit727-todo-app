@@ -1,5 +1,7 @@
 # Spring Boot Todo Application with Kubernetes Deployment
 
+![Screenshot 2025-03-29 083337](https://github.com/user-attachments/assets/fef1765b-39b8-4cb1-9af8-16e4874b46b4)
+
 ## 📝 Table of Contents
 - [Project Overview](#-project-overview)
 - [Key Features](#-key-features)
@@ -14,7 +16,7 @@
 - [Academic Context](#-academic-context)
 - [License](#-license)
 
-![Screenshot 2025-03-29 083337](https://github.com/user-attachments/assets/fef1765b-39b8-4cb1-9af8-16e4874b46b4)
+
 
 
 ## 🌟 Project Overview
